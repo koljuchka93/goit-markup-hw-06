@@ -511,16 +511,50 @@
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop offis-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-btn-icon" width="11" heigth="11">
             <use href="./images/sprite.svg#close-btn-icon"></use>
           </svg>
         </button>
+        <!-- modal form -->
+        <form action="#" class="modal-form">
+          <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-form-field">
+            Имя
+            <input type="text" class="modal-form-input" />
+          </label>
+          <label class="modal-form-field">
+            Телефон
+            <input type="tel" class="modal-form-input" />
+          </label>
+          <label class="modal-form-field">
+            Почта
+            <input type="email" class="modal-form-input" />
+          </label>
+          <label class="modal-form-field">
+            Сообщение
+            <textarea name="" class="modal-form-message"></textarea>
+          </label>
+          <!-- checkbox  -->
+          <input
+            type="checkbox"
+            class="modal-form-checkbox"
+            id="checkbox-policy"
+          />
+          <label for="" class="modal-form-checkbox-policy">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="modal-form-policy-link" href="http://">
+              Условия договора
+            </a>
+          </label>
+          <button type="button" class="modal-form-btn">Отправить</button>
+          <!-- end checkbox -->
+        </form>
       </div>
     </div>
     <!-- JAVASCRIPTS ADD -->
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
