@@ -507,11 +507,38 @@
             </li>
           </ul>
         </div>
+        <!-- SUBSCRIBE -->
+        <div class="subscribe">
+          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+          <!-- input form -->
+          <label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+              <input
+                class="email-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </span>
+          </label>
+          <!-- btn -->
+          <button type="submit" class="subscribe-form-btn">
+            Подписаться
+            <span class="subscribe-btn-icon">
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </span>
+          </button>
+
+          <!-- end btn -->
+        </div>
       </div>
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop offis-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- close tbn -->
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -603,6 +630,6 @@
       </div>
     </div>
     <!-- JAVASCRIPTS ADD -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
