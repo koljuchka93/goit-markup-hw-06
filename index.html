@@ -575,7 +575,6 @@
               </span>
             </span>
           </label>
-
           <!-- TEXTAREA -->
           <label class="modal-form-field">
             Сообщение
@@ -586,23 +585,20 @@
             >
             </textarea>
           </label>
-
           <!-- checkbox  -->
           <input
             type="checkbox"
             name="user-policy"
-            class="modal-form-checkbox"
+            class="modal-form-checkbox visually-hidden"
             id="checkbox-policy"
             required
           />
-          <label for="" class="modal-form-checkbox-policy">
+          <label for="checkbox-policy" class="modal-form-checkbox-policy">
             Соглашаюсь с рассылкой и принимаю
-            <a class="modal-form-policy-link" href="http://">
-              Условия договора
-            </a>
+            <a class="modal-form-policy-link" href="#"> Условия договора </a>
           </label>
+          <!-- approve button -->
           <button type="submit" class="modal-form-btn">Отправить</button>
-          <!-- end checkbox -->
         </form>
       </div>
     </div>
