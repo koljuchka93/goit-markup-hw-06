@@ -785,8 +785,8 @@ body {
 .modal-form-checkbox-policy {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 714;
-  color: #757575;
+  line-height: 1.714;
+  color: var(--font-paragraph-color);
 }
 .modal-form-checkbox-policy::before {
   display: inline-block;
@@ -797,9 +797,42 @@ body {
   border-radius: 2px;
   cursor: pointer;
   outline: 2px solid var(--font-heading-color);
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
   background-image: url(/images/icon-check.svg);
+  outline: var(--font—btn-accent-color);
+}
+.modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
+  outline-color: var(--font—btn-accent-color);
+}
+
+/* approve button */
+.modal-form-btn {
+  align-self: center;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--main-bcgrnd-color);
+  background: var(--font—btn-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 30px;
+  border: 1px;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 30px;
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background: var(--btn-click-on-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* END MODAL WINDOW */
