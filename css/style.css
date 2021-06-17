@@ -521,7 +521,7 @@ body {
 /* .icons-team-div {} */
 /* h2 */
 .icons-title {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -585,7 +585,7 @@ body {
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-bcgrnd-color);
@@ -708,17 +708,19 @@ body {
 }
 
 /* icons description */
-/* .modal-form-field {
-} */
+
 .modal-form-input-wrapper {
   position: relative;
   display: block;
+  margin-top: 4px;
+}
+.modal-form-field {
+  margin-bottom: 10px;
 }
 .modal-form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  /* box-sizing: border-box; */
   border-radius: 4px;
   padding-left: 42px;
 }
@@ -731,5 +733,51 @@ body {
   width: 12px;
   height: 12px;
   fill: var(--font-heading-color);
+}
+
+.modal-form-input:focus {
+  border-color: var(--font—btn-accent-color);
+  outline: none;
+}
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--font—btn-accent-color);
+}
+/* validation */
+.modal-form-input:required:focus:not(:placeholder-shown):valid {
+  border-color: var(--btn-click-on-color);
+}
+.modal-form-input:required:focus:not(:placeholder-shown):invalid {
+  border-color: tomato;
+}
+/* .modal-form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+} */
+
+/* textarea */
+/* .modal-form-field {
+  margin-bottom: px;
+} */
+.modal-form-message {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+.modal-form-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-message:focus {
+  outline: none;
+  border-color: var(--font—btn-accent-color);
 }
 /* END MODAL WINDOW */
