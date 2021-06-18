@@ -834,7 +834,8 @@ body {
   /* outline: var(--font—btn-accent-color); */
 }
 .modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
-  outline-color: var(--font—btn-accent-color);
+  /* outline-color: var(--font—btn-accent-color); */
+  outline: var(--font—btn-accent-color);
 }
 
 /* approve button */
