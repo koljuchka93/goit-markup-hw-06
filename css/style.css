@@ -830,7 +830,7 @@ body {
   margin-right: 7px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-  background-image: url(./images/icon-check.svg);
+  background-image: url(/images/icon-check.svg);
   /* outline: var(--font—btn-accent-color); */
 }
 .modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
