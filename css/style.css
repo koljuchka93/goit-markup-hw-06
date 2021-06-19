@@ -701,7 +701,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-bcgrnd-color);
   background: var(--font—btn-accent-color);
@@ -722,6 +722,7 @@ body {
 .footer-btn-icon {
   height: 24px;
   width: 24px;
+  margin-top: 10px;
   margin-left: 10px;
   fill: var(--main-bcgrnd-color);
 }
