@@ -664,7 +664,9 @@ body {
 }
 /* SUBSCRIBE BOX */
 .subscribe {
-  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+  margin-left: 105px;
 }
 .subscribe-input-btn-container {
   display: flex;
@@ -773,18 +775,30 @@ body {
   height: 11px;
   width: 11px;
 }
+.close-btn-icon:hover,
+.close-btn-icon:focus {
+  fill: var(--font—btn-accent-color);
+}
+
 .modal-form-head {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .modal-form {
   display: flex;
   flex-direction: column;
 }
 
+.modal-form-titles {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--font-paragraph-color);
+}
 /* icons description */
 .modal-form-input-wrapper {
   position: relative;
@@ -890,7 +904,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 10px 55px;
   border: 1px;
   animation-duration: 2000ms;
   animation-iteration-count: 1;
